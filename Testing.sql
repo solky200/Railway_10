@@ -123,15 +123,15 @@ CREATE TABLE ExamQuestion(
 INSERT INTO Department(DepartmentName) 
 VALUES
 						('Marketing'	),
-						('Sale'		),
+						('Sale'			),
 						('Bảo vệ'		),
 						('Nhân sự'		),
-						('Kỹ thuật'	),
+						('Kỹ thuật'		),
 						('Tài chính'	),
-						('Phó giám đốc'),
-						('Giám đốc'	),
+						('Phó giám đốc'	),
+						('Giám đốc'		),
 						('Thư kí'		),
-						('Bán hàng'	);
+						('Bán hàng'		);
     
 -- Add data position
 INSERT INTO Position	(PositionName	) 
@@ -202,42 +202,42 @@ VALUES 								('Java'			),
 													
 -- Add data Question
 INSERT INTO Question	(Content			, CategoryID, TypeID		, CreatorID	, CreateDate )
-VALUES 					(N'Câu hỏi về Java ',	1		,   '1'			,   '2'		,'2020-04-05'),
-						(N'Câu Hỏi về PHP'	,	10		,   '2'			,   '2'		,'2020-04-05'),
-						(N'Hỏi về C#'		,	9		,   '2'			,   '3'		,'2020-04-06'),
-						(N'Hỏi về Ruby'		,	6		,   '1'			,   '4'		,'2020-04-06'),
-						(N'Hỏi về Postman'	,	5		,   '1'			,   '5'		,'2020-04-06'),
-						(N'Hỏi về ADO.NET'	,	3		,   '2'			,   '6'		,'2020-04-06'),
-						(N'Hỏi về ASP.NET'	,	2		,   '1'			,   '7'		,'2020-04-06'),
-						(N'Hỏi về C++'		,	8		,   '1'			,   '8'		,'2020-04-07'),
-						(N'Hỏi về SQL'		,	4		,   '2'			,   '9'		,'2020-04-07'),
-						(N'Hỏi về Python'	,	7		,   '1'			,   '10'	,'2020-04-07');
+VALUES 					('Câu hỏi về Java ',	1		,   '1'			,   '2'		,'2020-12-19'),
+						('Câu Hỏi về PHP'	,	10		,   '2'			,   '2'		,'2020-04-05'),
+						('Hỏi về C#'		,	9		,   '2'			,   '3'		,'2020-04-06'),
+						('Hỏi về Ruby'		,	6		,   '1'			,   '4'		,'2020-04-06'),
+						('Hỏi về Postman'	,	5		,   '1'			,   '5'		,'2020-04-06'),
+						('Hỏi về ADO.NET'	,	3		,   '2'			,   '6'		,'2020-04-06'),
+						('Hỏi về ASP.NET'	,	2		,   '1'			,   '7'		,'2020-04-06'),
+						('Hỏi về C++'		,	8		,   '1'			,   '8'		,'2020-04-07'),
+						('Hỏi về SQL'		,	4		,   '2'			,   '9'		,'2020-04-07'),
+						('Hỏi về Python'	,	7		,   '1'			,   '10'	,'2020-04-07');
 
 -- Add data Answers
 INSERT INTO Answer	(  Content		, QuestionID	, isCorrect	)
-VALUES 				(N'Trả lời 01'	,   1			,	0		),
-					(N'Trả lời 02'	,   1			,	1		),
-                    (N'Trả lời 03'	,   1			,	0		),
-                    (N'Trả lời 04'	,   1			,	1		),
-                    (N'Trả lời 05'	,   2			,	1		),
-                    (N'Trả lời 06'	,   3			,	1		),
-                    (N'Trả lời 07'	,   4			,	0		),
-                    (N'Trả lời 08'	,   8			,	0		),
-                    (N'Trả lời 09'	,   9			,	1		),
-                    (N'Trả lời 10'	,   10			,	1		);
+VALUES 				('Trả lời 01'	,   1			,	0		),
+					('Trả lời 02'	,   1			,	1		),
+                    ('Trả lời 03'	,   1			,	0		),
+                    ('Trả lời 04'	,   1			,	1		),
+                    ('Trả lời 05'	,   2			,	1		),
+                    ('Trả lời 06'	,   3			,	1		),
+                    ('Trả lời 07'	,   4			,	0		),
+                    ('Trả lời 08'	,   8			,	0		),
+                    ('Trả lời 09'	,   9			,	1		),
+                    ('Trả lời 10'	,   10			,	1		);
 	
 -- Add data Exam
 INSERT INTO Exam	(`Code`			, Title					, CategoryID	, Duration	, CreatorID		, CreateDate )
-VALUES 				('VTIQ001'		, N'Đề thi C#'			,	1			,	60		,   '5'			,'2019-04-05'),
-					('VTIQ002'		, N'Đề thi PHP'			,	10			,	60		,   '2'			,'2019-04-05'),
-                    ('VTIQ003'		, N'Đề thi C++'			,	9			,	120		,   '2'			,'2019-04-07'),
-                    ('VTIQ004'		, N'Đề thi Java'		,	6			,	60		,   '3'			,'2020-04-08'),
-                    ('VTIQ005'		, N'Đề thi Ruby'		,	5			,	120		,   '4'			,'2020-04-10'),
-                    ('VTIQ006'		, N'Đề thi Postman'		,	3			,	60		,   '6'			,'2020-04-05'),
-                    ('VTIQ007'		, N'Đề thi SQL'			,	2			,	60		,   '7'			,'2020-04-05'),
-                    ('VTIQ008'		, N'Đề thi Python'		,	8			,	60		,   '8'			,'2020-04-07'),
-                    ('VTIQ009'		, N'Đề thi ADO.NET'		,	4			,	90		,   '9'			,'2020-04-07'),
-                    ('VTIQ010'		, N'Đề thi ASP.NET'		,	7			,	90		,   '10'		,'2020-04-08');
+VALUES 				('VTIQ001'		, 'Đề thi C#'			,	1			,	60		,   '5'			,'2019-12-19'),
+					('VTIQ002'		, 'Đề thi PHP'			,	10			,	60		,   '2'			,'2019-04-05'),
+                    ('VTIQ003'		, 'Đề thi C++'			,	9			,	120		,   '2'			,'2019-04-07'),
+                    ('VTIQ004'		, 'Đề thi Java'			,	6			,	60		,   '3'			,'2020-04-08'),
+                    ('VTIQ005'		, 'Đề thi Ruby'			,	5			,	120		,   '4'			,'2020-04-10'),
+                    ('VTIQ006'		, 'Đề thi Postman'		,	3			,	60		,   '6'			,'2020-04-05'),
+                    ('VTIQ007'		, 'Đề thi SQL'			,	2			,	60		,   '7'			,'2020-04-05'),
+                    ('VTIQ008'		, 'Đề thi Python'		,	8			,	60		,   '8'			,'2020-04-07'),
+                    ('VTIQ009'		, 'Đề thi ADO.NET'		,	4			,	90		,   '9'			,'2020-04-07'),
+                    ('VTIQ010'		, 'Đề thi ASP.NET'		,	7			,	90		,   '10'		,'2020-04-08');
                     
                     
 -- Add data ExamQuestion
@@ -254,20 +254,85 @@ VALUES 					(	1	,		5		),
 						(	10	,		8		); 
 
 -- question2 ex 3
-SELECT *
-From `Department`;
+SELECT 
+    *
+FROM
+    `Department`;
 -- Q3 ex3
-SELECT * FROM Department;
-SELECT DepartmentID FROM Department WHERE DepartmentName='Sale';
+SELECT 
+    *
+FROM
+    Department;
+SELECT 
+    DepartmentID
+FROM
+    Department
+WHERE
+    DepartmentName = 'Sale';
 -- Q4 5 ex3
-SELECT * FROM Account WHERE CHAR_LENGTH(FullName)= (SELECT MAX(CHAR_LENGTH(FullName)) FROM Account) AND DepartmentID= 3;
+SELECT 
+    *
+FROM
+    Account
+WHERE
+    CHAR_LENGTH(FullName) = (SELECT 
+            MAX(CHAR_LENGTH(FullName))
+        FROM
+            Account)
+        AND DepartmentID = 3;
 
 -- Q6 ex 3
-SELECT GroupName FROM `Group` WHERE CreateDate < '20-12-2019';
+SELECT 
+    GroupName
+FROM
+    `Group`
+WHERE
+    CreateDate < 20 - 12 - 2019;
 -- Q7 ex 3
-SELECT QuestionID FROM Answer GROUP BY QuestionID HAVING Count(QuestionID) >= 4;
+SELECT 
+    QuestionID
+FROM
+    Answer
+GROUP BY QuestionID
+HAVING COUNT(QuestionID) >= 4;
 -- Q8 ex 3
-
+SELECT 
+    `Code`
+FROM
+    Exam
+WHERE
+    Duration >= 60
+        AND CreateDate < 2019 - 12 - 20;
+-- Q9 ex 3
+SELECT 
+    *
+FROM
+    `Group`
+ORDER BY CreateDate DESC
+LIMIT 5;
+-- Q10 ex 3
+SELECT 
+    COUNT(DepartmentID) AS 'Số nhân viên'
+FROM
+    Account
+WHERE
+    DepartmentID = 2 Q11 ex 3
+Select * From `Account` Where Fullname LIKE 'D%o';
+-- Q12 ex 3
+DELETE FROM Exam Where CreateDate < '2019-12-20';
+-- Q13 ex 3
+DELETE FROM Question Where Content Like '%Câu hỏi%';
+-- Q14 ex 3
+UPDATE `Account` 
+SET 		Fullname 	= 	'Nguyễn Bá Lộc', 
+			Email 		= 	'loc.nguyenba@vti.com.vn'
+WHERE 		AccountID = 5;
+-- Q15 ex 3
+UPDATE `GroupAccount` 
+SET 
+    AccountID = 5
+WHERE
+    GroupID = 4;
 
 
 
