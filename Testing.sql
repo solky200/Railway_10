@@ -260,10 +260,6 @@ FROM
     `Department`;
 -- Q3 ex3
 SELECT 
-    *
-FROM
-    Department;
-SELECT 
     DepartmentID
 FROM
     Department
@@ -273,12 +269,12 @@ WHERE
 SELECT 
     *
 FROM
-    Account
+    `Account`
 WHERE
     CHAR_LENGTH(FullName) = (SELECT 
             MAX(CHAR_LENGTH(FullName))
         FROM
-            Account)
+            `Account`)
         AND DepartmentID = 3;
 
 -- Q6 ex 3
