@@ -310,9 +310,10 @@ LIMIT 5;
 SELECT 
     COUNT(DepartmentID) AS 'Số nhân viên'
 FROM
-    Account
+    `Account`
 WHERE
-    DepartmentID = 2 Q11 ex 3
+    DepartmentID = 2;
+-- Q11 ex 3
 Select * From `Account` Where Fullname LIKE 'D%o';
 -- Q12 ex 3
 DELETE FROM Exam Where CreateDate < '2019-12-20';
